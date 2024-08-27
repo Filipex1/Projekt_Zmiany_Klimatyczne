@@ -20,7 +20,11 @@ async def hello(ctx):
 
 @bot.command()
 async def pomocy(ctx):
-    await ctx.send(f'Komendy które możesz użyć: \n $hello - Bot się przywita \n $he - Easteregg \n $mem - Generacja mema (jest 7)')
+    await ctx.send(f'Komendy które możesz użyć: \n $hello - Bot się przywita \n $he - Easteregg \n $lodowiec - Info kiedy stopnieją lodowce \n $mem - Generacja mema (jest 7)')
+
+@bot.command()
+async def lodowiec(ctx):
+    await ctx.send(f'Z wyniku globalnego ocieplenia OGROMNA część lodowców stopnieje do 2050.')
 
 @bot.command()
 async def he(ctx, count_heh = 5):
@@ -35,4 +39,4 @@ async def mem(ctx):
 # Możemy następnie wysłać ten plik jako parametr!
     await ctx.send(file=picture)
 
-bot.run("Twój discord Token")
+bot.run("Wpisz tutaj swój discord token")
