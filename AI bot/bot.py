@@ -16,7 +16,7 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Cześć! Jestem botem, {bot.user}!')
+    await ctx.send(f'Cześć! Jestem botem, Mam na imę Ksavier!')
 
 @bot.command()
 async def pomocy(ctx):
